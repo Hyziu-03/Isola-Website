@@ -1,0 +1,78 @@
+@import "design_system"
+
+* 
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    user-select: none
+
+html
+    font-family: $family 
+    color: $black
+
+// optimized for screens >1024px and <2560px    
+.header
+    display: flex
+    justify-content: space-around
+
+.title
+    @include font(bold, heading)
+    font-size: $title
+    padding-top: $large
+    padding-bottom: $small
+
+.subtitle
+    @include font
+    padding-bottom: $large
+
+// optimized for screens >1024px and <2560px    
+.modules
+    background-color: $yellow
+    padding-bottom: $extra-large
+
+    .tiles
+        justify-content: space-evenly
+
+.heading
+    @include font(bold, heading)
+    font-size: $heading
+    padding: $extra-large 0
+
+.tiles
+    display: flex   
+
+.module
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.vector
+    @include vector
+    margin-bottom: $medium
+
+.name
+    @include font
+    font-size: $name
+
+// not optimized
+.author
+    background-color: $pink
+    color: $white
+    padding-bottom: $extra-large
+
+    .tiles
+        align-items: center
+
+.photo
+    background-image: url(../images/szymon_hyziak.jpg)
+    background-position: center
+    background-size: cover
+    border-radius: 50% 50% 70% 30% / 30% 30% 70% 70% 
+    margin-left: $extra-large
+
+.paragraphs
+    margin: 0 $extra-large
+
+.paragraph
+    @include font
+    margin: $large 0

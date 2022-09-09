@@ -1,0 +1,47 @@
+// Colors:  
+
+$black: #2a2a2a
+$white: #efefef
+$pink: #ff21ed
+$yellow: #edff21
+
+// Spacing units:
+
+$small: 16px 
+$medium: 32px 
+$large: 48px 
+$extra-large: 96px
+
+// Typeface: 
+
+$family: 'Poppins', sans-serif
+
+// Fonts:
+
+$title: 96px
+$heading: 64px
+$name: 48px
+
+@mixin font($weight: other, $purpose: other)
+    text-align: center 
+
+    @if $weight == bold
+        font-weight: 600
+    @else 
+        font-weight: 400
+
+    @if $purpose == heading
+        line-height: 96px
+    @else
+        line-height: 54px
+        font-size: 32px
+
+// Graphics:
+
+@mixin blob
+    width: 240px
+    height: 255px
+    
+@mixin vector 
+    width: 160px
+    height: 160px
