@@ -45,3 +45,12 @@ $name: 48px
 @mixin vector 
     width: 160px
     height: 160px
+
+    @media (max-width: 1024px)
+        width: 128px
+        height: 128px
+
+@mixin photo-background
+    background-image: url(../images/szymon_hyziak.jpg)
+    background-position: center
+    background-size: cover
