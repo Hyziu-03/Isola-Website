@@ -22,62 +22,82 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="blob">
+            <div class="blob left">
                 <img src="vectors/title_left.svg" alt="">
             </div>
-            <section>
+            <section tabindex="0">
                 <h1 class="title">Isola</h1>
                 <div class="subtitle">
                     A web development oriented <br>
                     multi purpose JavaScript library
                 </div>
             </section>
-            <div class="blob">
+            <div class="blob right">
                 <img src="vectors/title_right.svg" alt="">
             </div>
         </header>
 
         <article class="modules">
-            <h2 class="heading">What is there for you in Isola?</h2>
+            <h2 class="heading" tabindex="0">What is there for you in Isola?</h2>
             <section class="tiles">
                 <section class="module">
                     <img src="vectors/language.svg" alt="" class="vector">
-                    <span class="name">Browser</span>
+                    <span class="name" tabindex="0">Browser</span>
                 </section>
                 <section class="module">
                     <img src="vectors/tools_wrench.svg" alt="" class="vector">
-                    <span class="name">Utilities</span>
+                    <span class="name" tabindex="0">Utilities</span>
                 </section>
                 <section class="module">
                     <img src="vectors/egg.svg" alt="" class="vector">
-                    <span class="name">Easter eggs</span>
+                    <span class="name" tabindex="0">Easter eggs</span>
                 </section>
             </section>
         </article>
 
         <article class="author">
-            <h2 class="heading">Who created Isola?</h2>
+            <h2 class="heading" tabindex="0">Who created Isola?</h2>
             <section class="tiles">
                 <img src="vectors/photo_border.svg" alt="" class="photo">
                 <section class="paragraphs">
-                    <p class="paragraph">
+                    <p class="paragraph" tabindex="0">
                         Hello. I am Szymon - 19 years old frontend developer.
                     </p>
-                    <p class="paragraph">
+                    <p class="paragraph" tabindex="0">
                         I have been building websites for more than two years.
                         I know how to work with React.js and Figma.
                     </p>
-                    <p class="paragraph">I work for HOMIES since June 2021.</p>
+                    <p class="paragraph" tabindex="0">
+                        I work for HOMIES since June 2021.
+                    </p>
                 </section>
             </section>
         </article>
 
-        <footer class="footer">
+        <footer>
             <section class="buttons">
-                <button class="button">Download documentation</button>
-                <button class="button">Use Isola in your project</button>
+                <button tabindex="-1">
+                    <a 
+                        href="https://github.com/Hyziu-03/Isola/blob/main/README.md" 
+                        class="documentation button"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                    >
+                        Read documentation online
+                    </a>
+                </button>
+                <button tabindex="-1">
+                    <a 
+                        href="https://www.npmjs.com/package/isola" 
+                        class="library button"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                    >
+                        Use Isola in your project
+                    </a>
+                </button>
             </section>
-            <p class="paragraph">
+            <p class="paragraph" tabindex="0">
                 Szymon Hyziak &copy; 2022 • Isola. 
                 A web development oriented multi purpose JavaScript library
             </p>
