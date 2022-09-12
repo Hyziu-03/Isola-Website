@@ -8,7 +8,7 @@
 
 html
     font-family: $family 
-    color: $black
+    overflow-x: hidden 
 
 .header
     display: flex
@@ -25,12 +25,10 @@ html
     padding-bottom: $large
     margin: 0 $medium
 
-.blob
+.blob-container
     @include blob
 
-// optimized for screens >425px and <2560px    
 .modules
-    background-color: $yellow
     padding-bottom: $extra-large
 
     .tiles
@@ -60,7 +58,6 @@ html
     font-size: $name
 
 .author
-    background-color: $pink
     color: $white
     padding-bottom: $extra-large
 
@@ -91,24 +88,19 @@ button
 
 .button
     @include font
-    padding: $medium $large
-    text-decoration: none
+    @include button 
     margin: 0 $medium 
-    border-radius: $small
-    box-shadow: $small $small $small rgba(0, 0, 0, .2)
     border: 4px solid transparent
-    transition: .25s all ease
+    
         
 .documentation
-    background-color: $yellow 
-    color: $black
+    transition: .25s all ease
 
     &:hover
         border-color: $black
 
 .library
-    background-color: $pink
-    color: $white
+    transition: .25s all ease
 
     &:hover
         border-color: $white
@@ -141,7 +133,7 @@ footer .paragraph
     .subtitle
         font-size: $name / 2 
 
-    .blob
+    .blob-container
         position: absolute 
         z-index: -1
 
@@ -164,10 +156,14 @@ footer .paragraph
         flex-direction: column
 
     .module
-        flex-direction: row !important
+        flex-direction: row 
         justify-content: center
         border-bottom: 4px solid $black 
         margin-top: $large
+
+    @media (prefers-color-scheme: dark)
+        .module
+            border-bottom: 4px solid $white
 
     .module:first-child
         margin-top: 0
@@ -203,4 +199,51 @@ footer .paragraph
         rotate: 0deg
         left: 15%
 
+    .name 
+        font-size: $name * 2/3
+
 // optimized for screens >320px and <2560px   
+
+@media (prefers-color-scheme: light)
+    html
+        color: $black
+        background-color: $white
+
+    .documentation
+        background-color: $yellow 
+        color: $black
+
+    .library
+        background-color: $pink
+        color: $white
+
+    .modules
+        background-color: $yellow
+
+    .author
+        background-color: $pink
+
+    .blob
+        fill: $pink
+
+@media (prefers-color-scheme: dark)
+    html 
+        color: $white
+        background-color: $black
+
+    .documentation
+        color: $white 
+        background-color: darken($yellow, 20%)
+
+    .library
+        background-color: darken($pink, 20%)
+        color: $white
+
+    .modules
+        background-color: darken($yellow, 20%)
+
+    .author
+        background-color: darken($pink, 20%)
+
+    .blob
+        fill: darken($pink, 20%)

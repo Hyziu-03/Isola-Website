@@ -53,7 +53,19 @@ $name: 48px
         width: 128px
         height: 128px
 
+    @media (max-width: 425px)
+        width: 96px
+        height: 96px
+
 @mixin photo-background
     background-image: url(../images/szymon_hyziak.jpg)
     background-position: center
     background-size: cover
+
+// Components:
+
+@mixin button
+    border-radius: $small
+    box-shadow: $small $small $small rgba(0, 0, 0, .2)
+    padding: $medium $large
+    text-decoration: none
