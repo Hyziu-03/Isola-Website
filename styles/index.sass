@@ -10,7 +10,6 @@ html
     font-family: $family 
     color: $black
 
-// optimized for screens >425px and <2560px    
 .header
     display: flex
     justify-content: space-around
@@ -24,6 +23,7 @@ html
 .subtitle
     @include font
     padding-bottom: $large
+    margin: 0 $medium
 
 .blob
     @include blob
@@ -59,7 +59,6 @@ html
     @include font
     font-size: $name
 
-// optimized for screens >768px and <2560px  
 .author
     background-color: $pink
     color: $white
@@ -81,7 +80,6 @@ html
     @include font
     margin: $large 0
 
-// optimized for screens >1024px and <2560px    
 .buttons
     display: flex
     justify-content: space-around
@@ -95,23 +93,46 @@ button
     @include font
     padding: $medium $large
     text-decoration: none
-    
+    margin: 0 $medium 
+    border-radius: $small
+    box-shadow: $small $small $small rgba(0, 0, 0, .2)
+    border: 4px solid transparent
+    transition: .25s all ease
+        
 .documentation
     background-color: $yellow 
     color: $black
+
+    &:hover
+        border-color: $black
 
 .library
     background-color: $pink
     color: $white
 
-// fully optimized
+    &:hover
+        border-color: $white
+
 footer .paragraph
+    @include font($purpose: footer)
     margin: $medium
 
 @media (max-width: 1300px)
     .author .tiles
         flex-direction: column
         gap: $large
+
+    .photo
+        margin: 0
+
+@media (max-width: 1060px)
+    .buttons
+        flex-direction: column
+        margin: 0
+
+    .button
+        display: block
+        margin: $medium
 
 @media (max-width: 1024px)    
     .title
@@ -161,3 +182,25 @@ footer .paragraph
 @media (max-width: 768px)
     .name
         margin-left: $small
+
+    .author .tiles
+        gap: 0
+
+    .paragraphs
+        margin: 0 $medium
+
+    .photo
+        transform: scale(.75)
+
+    .button
+        padding: $small $medium
+
+@media (max-width: 425px)
+    .left
+        display: none
+
+    .right
+        rotate: 0deg
+        left: 15%
+
+// optimized for screens >320px and <2560px   
