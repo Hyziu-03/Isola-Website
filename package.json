@@ -1,0 +1,27 @@
+{
+  "name": "isola-website",
+  "version": "1.0.0",
+  "description": "A web development oriented multi purpose JavaScript library",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyziu-03/isola-website.git"
+  },
+  "keywords": [
+    "browser",
+    "utilities",
+    "easter",
+    "eggs",
+    "javascript",
+    "library"
+  ],
+  "author": "Szymon Hyziak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyziu-03/isola-website/issues"
+  },
+  "homepage": "https://github.com/Hyziu-03/isola-website#readme"
+}

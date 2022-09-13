@@ -12,3 +12,7 @@ Link: https://github.com/Hyziu-03/Isola/blob/main/README.md
 
 Download the package via npm and ssee how is it performing in the registry.
 Link: https://www.npmjs.com/package/isola 
+
+### Copyright
+
+Box icons created by Good Ware - Flaticon
