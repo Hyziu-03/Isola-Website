@@ -91,19 +91,7 @@ button
     @include button 
     margin: 0 $medium 
     border: 4px solid transparent
-    
-        
-.documentation
     transition: .25s all ease
-
-    &:hover
-        border-color: $black
-
-.library
-    transition: .25s all ease
-
-    &:hover
-        border-color: $white
 
 footer .paragraph
     @include font($purpose: footer)
@@ -202,7 +190,7 @@ footer .paragraph
     .name 
         font-size: $name * 2/3
 
-// optimized for screens >320px and <2560px   
+// Themes:
 
 @media (prefers-color-scheme: light)
     html
@@ -216,6 +204,9 @@ footer .paragraph
     .library
         background-color: $pink
         color: $white
+
+    .documentation:hover, .library:hover
+        border-color: $black
 
     .modules
         background-color: $yellow
@@ -239,6 +230,9 @@ footer .paragraph
         background-color: darken($pink, 20%)
         color: $white
 
+    .documentation:hover, .library:hover
+        border-color: $white
+
     .modules
         background-color: darken($yellow, 20%)
 
@@ -247,3 +241,5 @@ footer .paragraph
 
     .blob
         fill: darken($pink, 20%)
+
+// optimized for screens >320px and <2560px   
