@@ -97,6 +97,15 @@ footer .paragraph
     @include font($purpose: footer)
     margin: $medium
 
+.footer
+    display: flex
+    justify-content: center
+    align-items: center
+
+.sponsorship-image
+    height: 60px
+    width: 217px
+
 @media (max-width: 1300px)
     .author .tiles
         flex-direction: column
@@ -174,10 +183,13 @@ footer .paragraph
         margin: 0 $medium
 
     .photo
-        transform: scale(.75)
+        transform: scale(.6)
 
     .button
         padding: $small $medium
+
+    .footer
+        flex-direction: column
 
 @media (max-width: 425px)
     .left
