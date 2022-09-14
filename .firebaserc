@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "isola-website"
-  }
+    "default": "isola-website",
+    "isolajs": "isolajs"
+  },
+  "targets": {},
+  "etags": {}
 }
