@@ -40,14 +40,8 @@
     </title>
 
     <link rel="canonical" href="https://isolajs.web.app/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
-        rel="stylesheet"
-    >
-    <link rel="stylesheet" href="index.min.css">
-    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles/index.min.css">
+    <link rel="icon" href="images/favicon.png">
 
     <script src="index.js" type="module" async></script>
 </head>
@@ -102,15 +96,30 @@
             </h2>
             <section class="tiles">
                 <section class="module">
-                    <img src="vectors/language.svg" alt="" class="vector">
+                    <img 
+                        src="vectors/language.svg" 
+                        alt="" 
+                        class="vector" 
+                        loading="lazy"
+                    >
                     <span class="name" tabindex="0">Browser</span>
                 </section>
                 <section class="module">
-                    <img src="vectors/tools_wrench.svg" alt="" class="vector">
+                    <img 
+                        src="vectors/tools_wrench.svg" 
+                        alt="" 
+                        class="vector" 
+                        loading="lazy"
+                    >
                     <span class="name" tabindex="0">Utilities</span>
                 </section>
                 <section class="module">
-                    <img src="vectors/egg.svg" alt="" class="vector">
+                    <img 
+                        src="vectors/egg.svg" 
+                        alt="" 
+                        class="vector" 
+                        loading="lazy"
+                    >
                     <span class="name" tabindex="0">Easter eggs</span>
                 </section>
             </section>
@@ -137,26 +146,22 @@
 
         <footer>
             <section class="buttons">
-                <button tabindex="-1">
-                    <a 
-                        href="https://github.com/Hyziu-03/Isola/blob/main/README.md" 
-                        class="documentation button"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                    >
-                        Read docs online
-                    </a>
-                </button>
-                <button tabindex="-1">
-                    <a 
-                        href="https://www.npmjs.com/package/isola" 
-                        class="library button"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                    >
-                        Use Isola.js in your project
-                    </a>
-                </button>
+                <a 
+                    href="https://github.com/Hyziu-03/Isola/blob/main/README.md" 
+                    class="documentation button"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                >
+                    Read docs online
+                </a>
+                <a 
+                    href="https://www.npmjs.com/package/isola" 
+                    class="library button"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                >
+                    Make use of Isola.js
+                </a>
             </section>
             <section class="footer">
                 <p class="paragraph" tabindex="0">
@@ -177,6 +182,18 @@
             </section>
         </footer>
     </div>
+     <script>
+        const registerServiceWorker = async () => {
+            if ("serviceWorker" in navigator) try {
+                const serviceWorkerInstance = await navigator.serviceWorker
+                    .register("service-worker.js", {
+                        scope: "/public/"
+                    });
+            } catch (error) {
+                console.error(error);
+            }
+        }; registerServiceWorker();
+     </script>
 </body>
 
 </html>
