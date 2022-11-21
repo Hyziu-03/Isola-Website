@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Hyziu-03/isola-website/issues"
   },
-  "homepage": "https://github.com/Hyziu-03/isola-website#readme"
+  "homepage": "https://github.com/Hyziu-03/isola-website#readme",
+  "dependencies": {
+    "firebase-tools": "^11.16.1"
+  }
 }
