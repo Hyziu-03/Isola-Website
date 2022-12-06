@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/Hyziu-03/isola-website#readme",
   "dependencies": {
-    "firebase-tools": "^1.2.0",
+    "firebase-tools": "^11.16.1",
     "got": "^12.5.3",
     "minimatch": "^5.1.1"
   }
