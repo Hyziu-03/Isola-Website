@@ -28,6 +28,7 @@
     "express": "^4.18.2",
     "firebase-tools": "^11.16.1",
     "got": "^12.5.3",
+    "jsonwebtoken": "^9.0.0",
     "minimatch": "^5.1.1",
     "qs": "^6.11.0"
   }
