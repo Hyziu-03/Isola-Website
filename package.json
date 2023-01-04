@@ -27,7 +27,7 @@
   "dependencies": {
     "express": "^4.17.3",
     "firebase-tools": "^11.16.1",
-    "got": "^12.5.3",
+    "got": "^11.8.5",
     "jsonwebtoken": "^9.0.0",
     "minimatch": "^3.0.5",
     "qs": "^6.7.3"
